@@ -2,6 +2,11 @@
 
 This project is an HTML and CSS-based website created as the first assignment for the MERN stack course at ITI (Information Technology Institute). The website consists of multiple pages to showcase different aspects such as personal information, hobbies, contact details, and more. Below is a detailed description of each page and the features included.
 
+## Certification
+
+<image src="certificate.png"/>
+
+
 ## Table of Contents
 
 1. [Home Page](#home-page)
