@@ -1,0 +1,242 @@
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(241 245 249);
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  background-color: rgb(226 232 240);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+textarea {
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-content img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-position: center;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+section#hobbies {
+  text-align: center;
+}
+
+section#hobbies .hobby {
+  display: inline-block;
+  margin: 10px;
+}
+
+section#hobbies .hobby img,
+section#birthday #birthday-content img {
+  height: 200px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  background-position: center;
+  object-fit: cover;
+}
+
+section#hobbies .hobby img:hover {
+  transform: scale(1.1);
+}
+
+section#birthday {
+  text-align: center;
+}
+
+section#birthday #birthday-content img {
+  height: 300px;
+}
+
+section#birthday form,section#contact form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-media a{
+  text-decoration: none;
+}
+
+.social-media img {
+  height: 50px;
+  width: 50px;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+  border-radius: 0;
+}
+
+section#wishes {
+  text-align: center;
+  padding: 20px;
+}
+
+section#wishes .slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+section#wishes .slide {
+  flex: 0 0 auto;
+  width: 70%;
+  scroll-snap-align: start;
+  position: relative;
+  
+}
+
+section#wishes .slide img {
+  height: 300px;
+}
+
+section#wishes .slide p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+section#cv {
+  padding: 20px;
+}
+
+section#cv h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section#cv .personal-info, section#cv .skills {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#cv h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+section#cv p, section#cv li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+section#cv ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
