@@ -4,7 +4,7 @@ This project involves creating a simple and functional To-Do List application us
 
 ## Certification
 
-<image src="certificate.png"/>
+<image src="Certificate.png"/>
 
 ## Features
 
